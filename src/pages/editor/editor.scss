@@ -1,0 +1,107 @@
+@import "../../style/index";
+
+.page-editor__detail {
+    .content-section{
+
+        header {
+          height: px2rem(230px);
+          width: 100%;
+          background-size: cover !important;
+        }
+        main img.avatar {
+          display: block;
+          margin: px2rem(-70px) auto 0;
+          width: px2rem(140px);
+          height: px2rem(140px);
+          border-radius: 99999px;
+        }
+        main h1 {
+          font-size: px2rem(34px);
+          margin: px2rem(26px) 0;
+          color: #000;
+          display: block;
+          text-align: center;
+          line-height: 1;
+        }
+        main p {
+          line-height: 1;
+          margin-bottom: px2rem(40px);
+          color: #999;
+          font-size: px2rem(26px);
+          text-align: center;
+        }
+        nav {
+          border-top: solid 1px #f3f3f3;
+        }
+        nav ul {
+          padding: 0;
+          margin: 0;
+        }
+        nav li {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          border-bottom: solid 1px #f3f3f3;
+          position: relative;
+        }
+        nav li .title {
+          line-height: px2rem(100px);
+          height: px2rem(100px);
+          display: inline-block;
+          font-size: px2rem(30px);
+          color: #000;
+          margin-right: px2rem(28px);
+        }
+        nav li .content {
+          line-height: px2rem(100px);
+          height: px2rem(100px);
+          display: inline-block;
+          font-size: px2rem(24px);
+          color: #999;
+          margin: 0;
+        }
+        nav li a {
+          padding: 0 px2rem(28px);
+          display: block;
+          height: px2rem(100px);
+          line-height: 0;
+          overflow: hidden;
+        }
+        nav li a:hover {
+          text-decoration: none;
+        }
+        nav li.with-link:after {
+          display: block;
+          position: absolute;
+          border-color: transparent transparent transparent #fff;
+          border-width: px2rem(14px);
+          border-style: solid;
+          height: 0;
+          width: 0;
+          top: px2rem(36px);
+          right: px2rem(16px);
+          line-height: 0;
+          content: "";
+        }
+        nav li.with-link:before {
+          display: block;
+          height: 0;
+          width: 0;
+          position: absolute;
+          top: px2rem(36px);
+          right: px2rem(14px);
+          border-color: transparent transparent transparent #999;
+          border-width: px2rem(14px);
+          border-style: solid;
+          line-height: 0;
+          content: "";
+        }
+        nav li.disabled .title {
+          color: #999;
+        }
+        nav li.disabled .content {
+          color: #ccc;
+        }
+
+    }
+}

@@ -1,0 +1,163 @@
+@import "./normalize";
+@import "../theme/default";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*[contenteditable] {
+    -webkit-user-select: auto !important;
+}
+*:focus {
+    outline: none;
+}
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+}
+// 消除输入框的阴影和边框
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    text-size-adjust: 100%;
+}
+i,
+em {
+    font-style: normal;
+}
+
+
+body,
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    min-height: 100%;
+    text-size-adjust: 100%;
+}
+html {
+  font-size: 50px;
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+body {
+    font-family: PingFang SC,Helvetica Neue,Hiragino Sans GB,Helvetica,Microsoft YaHei,Arial;
+    width: 100%;
+    height: 100%;
+    font-size: px2rem(32px);
+    line-height: 1.5;
+    color: #4d4d4d;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    text-decoration: none;
+    color: $primary-color;
+    user-select: none;
+    outline: none;
+}
+.clearfix {
+    zoom: 1;
+
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+    }
+}
+
+.flex {
+    display: flex;
+
+    .flex-1 {
+        flex: 1;
+    }
+}
+
+.button {
+    line-height: 1;
+    border: none;
+    padding: px2rem(26px) px2rem(30px);
+    background-color: $primary-color;
+    color: #fff;
+    font-size: px2rem(28px);
+    border-radius: px2rem(6px);
+}
+.block-button {
+    width: 100%;
+}
+
+.button[disabled="disabled"] {
+    opacity: 0.5;
+}
+
+
+
+
+// 无限加载提示
+.infinite-loading-container {
+    & > div {
+        margin: px2rem(20px) 0;
+
+        span {
+          font-size: px2rem(28px);
+          color: #999;
+        }
+    }
+}
+
+.infinite-loading {
+    & > div {
+        margin: px2rem(20px) 0;
+        text-align: center;
+
+        span {
+          font-size: px2rem(28px);
+          color: #999;
+        }
+    }
+}
+.loading-state__inline {
+    margin: px2rem(30px) 0;
+    text-align: center;
+
+    span {
+        font-size: px2rem(28px);
+        color: #999;
+    }
+}
+
+#app {
+    height: 100%;
+    max-width: 15rem;
+    margin: px2rem(100px) auto 0;
+}
+
+[v-cloak]{
+    display:none;
+}

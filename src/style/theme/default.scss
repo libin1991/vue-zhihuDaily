@@ -1,0 +1,111 @@
+@import "../functions/index";
+
+// Prefix 前缀
+$yu-prefix : yu;
+
+// Color
+// 参考: http://element.eleme.io/#/zh-CN/component/color
+$primary-color          : #00a2ea;  //主要
+$success-color          : #13ce66;  //成功
+$error-color            : #ff4949;  //错误
+$warning-color          : #f7ba2a;  //警告
+$highlight-color        : #20a0ff;  //高亮
+$normal-color           : #d9d9d9;  //默认
+
+$red				: #ff5252;
+$green				: #4caf50;
+$blue				: #1d8ce0;
+$black				: #1f2d3d;
+$light-black		: #324057;
+$extra-light-Black	: #475669;
+$silver				: #8492a6;
+$light-silver		: #99a9bf;
+$extra-light-silver	: #c0ccda;
+$gray				: #d3dce6;
+$light-gray			: #e5e9f2;
+$extra-light-gray	: #eff2f7;
+$dark-white			: #f9fafc;
+$white				: #ffffff;
+
+// Base & Require
+$body-background        : #fff;
+$component-background   : #fff;
+$font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$code-family            : Consolas, Menlo, Courier, monospace;
+$heading-color          : fade(#000, 75%);
+$text-color             : fade(#000, 65%);
+$text-color-secondary   : fade(#000, 43%);
+$disabled-color         : fade(#000, 25%);
+$heading-color-dark     : fade(#fff, 97%);
+$text-color-dark        : fade(#fff, 91%);
+$text-color-secondary-dark: fade(#fff, 67%);
+$disabled-color-dark    : fade(#fff, 35%);
+$font-size-base         : px2rem(32px);
+$font-size-lg           : $font-size-base + px2rem(2px);
+$line-height-base       : 1.5;
+$border-radius-base     : 4px;
+$border-radius-sm       : 2px;
+
+
+// ICONFONT
+$iconfont-css-prefix    : icon;
+$icon-url               : "//at.alicdn.com/t/font_v7ghomecdgec23xr";
+
+
+// LINK
+$link-color             : $primary-color;
+$link-hover-color       : #f30;
+$link-active-color      : #f30;
+$link-hover-decoration  : none;
+
+
+// Background color
+$background-color-base : #ebebeb; // basic gray background
+
+
+
+// Buttons
+
+
+// Layout
+$layout-body-background    : $white;
+$layout-header-background  : $primary-color;
+$layout-header-text-color  : $white;
+$layout-header-height      : px2rem(100px);
+$layout-header-padding     : 0 px2rem(20px);
+$layout-sider-background   : $white;
+
+
+// z-index list
+$zindex-affix           : 10;     //附上
+$zindex-back-top        : 10;     //返回顶部
+$zindex-modal-mask      : 1000;   //弹窗遮罩层
+$zindex-modal           : 1000;   //弹窗
+$zindex-notification    : 1010;   //通知
+$zindex-message         : 1010;   //信息
+$zindex-popover         : 1030;   //弹窗层
+$zindex-picker          : 1050;   //选择器
+$zindex-dropdown        : 1050;   //下拉菜单
+$zindex-tooltip         : 1060;   //提示信息
+
+
+// Form
+
+// Input
+
+// Tooltip
+
+// Popover
+
+
+// Progress
+
+
+// Menu
+
+// TimePicker
+
+// Carousel
+
+
+// Badge
